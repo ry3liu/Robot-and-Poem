@@ -24,7 +24,8 @@ $(document).ready(function(){
 		var m=$("#robot1").position();
 		var topMove1=m.top;
 		var j=$("#robot1").position();
-		var topMove2=j.top;		var halfWidth=$(window).width()/2;	
+		var topMove2=j.top;
+		var halfWidth=$(window).width()/2;	
 		$("#gateTop").css("left",(halfWidth-200));
 		$("#poetry1").hide();
 		$("#poetry2").hide();
@@ -32,7 +33,42 @@ $(document).ready(function(){
 		var place="first";
 		
 		
+		var i=0;
+		var totalLine="Two robots are arguing about which poem should be displayed on this website.Robot1 believes it should be Twinkle Twinkle Little Star.Robot2 believes it should be She Walks in Beauty. They decide to settle the argument by competing in a runnning race.The robot that win will have the poem of its choice displayed.The two robots will run along the track, use the control panel to decide which way they go.Click the start button to start the race";
+		
+		var line1="Two robots are arguing about which poem should be displayed on this website.";
+		var line2="Robot1 believes it should be <i>Twinkle Twinkle Little Star.";
+		var line3="Robot2 believes it should be <i>She Walks in Beauty. ";
+		var line4="They decide to settle the argument by competing in a runnning race. ";
+		var line5="The robot that win will have the poem of its choice displayed. ";
+		var line6="The two robots will run along the track, use the control panel to decide which way they go. ";
+		var line7="Click the start button to start the race. ";
+		var speed=50;
+		
+		var line1Length=line1.length;
+		var line2Length=line2.length+line1Length-3;
+		var line3Length=line3.length+line2Length-3;
+		var line4Length=line3Length+line4.length-1;
+		var line5Length=line4Length+line5.length-1;
+		var line6Length=line5Length+line6.length-1;
+		var line7Length=line6Length+line7.length;
+		
 	
+		
+		function firstLine(){
+			if(i<totalLine.length){
+			document.getElementById("rule").innerHTML+=totalLine.charAt(i);
+			i+=1;
+			setTimeout(firstLine,speed);
+				if(i==line1Length || i==line2Length || i==line3Length || i==line4Length|| i==line5Length || i==line6Length|| i==line7Length  ){
+					document.getElementById("rule").innerHTML+="<br>";
+				}
+			}
+			
+	
+		}
+		firstLine();
+		
 		
 		function decidePlace(){
 			if(!done){
