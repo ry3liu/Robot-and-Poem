@@ -1,0 +1,189 @@
+#rule{
+	position:absolute;
+	left:0;
+	top:0;
+	text-align:left;
+	font-size:20px;
+}
+.robot{
+	max-height:150px;
+}
+
+#race{
+	background:url("routes1.png"),url("route.png");
+	background-repeat:repeat-y, repeat-x;
+	background-position:center bottom, bottom center;
+	background-size:250px;
+	position:relative;
+	margin:0 0 0 0;
+	height:500px;
+
+	
+}
+
+#gateTop{
+	position:relative;
+	top:0%;
+	left:0;
+	margin:-35px auto 0 0;
+	
+	width:350px;
+}
+
+
+
+#race input[type="button"]{
+	position:relative;
+	top:400px;
+	left:500px;
+	background:#77b72f;
+	color:white;
+	border:solid 1px darkGreen;
+	
+}
+#redo{
+	background:darkGrey；
+	left:10px;
+	
+}
+
+.robot{
+	/*position:relative;
+	top:50%;
+	left:50%;*/
+	display:block;
+	position:relative;
+}
+
+
+#robot1{
+	/*
+	top:50%;
+	left:50%;
+	//color is #2c3eed
+	*/
+	
+	top:-50px;
+}
+
+#robot2{
+	top:-90px;
+}
+
+
+#controlPad{
+	width:200px;
+	height:200px;
+	border-radius:150px;
+	-webkit-border-radius:150px;
+	-moz-border-radius:150px;
+	/*webkit for chrome and safari, moz for firefox*/
+	position:relative;
+	
+	
+	/*
+	top and bottom margin are 100px while auto adjusting for left and right margin
+	*/
+	
+	background:url("route.jpg");
+}
+
+.navigationArrow{
+	width:45px;
+	height:45px;
+	border-radius:40px;
+	position:absolute;
+	background:beige;
+	color:darkBlue;
+	font-weight:bold;
+	font-size:30px;
+	padding:0px;
+	margin:0px;
+	top:20px;
+	left:20px;
+}
+
+
+#up {
+    left: 50%;
+    margin-left: -25px;
+}
+
+#left, #right {
+    top: 50%;
+    margin-top: -25px;
+}
+
+#right {
+    right: 20px;
+    left: inherit;
+}
+
+#down {
+    bottom: 20px;
+    top: inherit;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#raceInfo{
+	color:white;
+	width:80%;
+	margin:10px auto 0;
+	background:lightGrey;
+	border:ridge lightBlue;
+	text-align:center;
+	font-size:30px;
+	padding:0;
+	
+}
+
+
+
+.containerInfo{
+	width:50%;
+	float:left;
+	font-size:24px;
+	font-weight:bold;
+}
+
+#robot1Info{
+	background:#2c3eed;
+	
+}
+
+
+#robot2Info{
+	background:red;
+	
+}
+
+#raceInfo p{
+	display:block;
+	
+}
+
+#raceInfo span{
+	color:white;
+}
+
+
+input[type="button"]{
+	padding:10px 20px;
+	font-size:30px;
+}
+
+
+.poem{
+	font-size:20px;
+	display:block;
+	color:lightGrey;
+	width:80%;
+	margin:10px auto 0;
+	background:url("poem.jpg") no-repeat;
+	background-size:cover;
+	border:ridge lightBlue;
+	text-align:center;
+	height:780px;
+	padding:0;
+}
