@@ -25,6 +25,7 @@ $(document).ready(function(){
 		var topMove1=m.top;
 		var j=$("#robot1").position();
 		var topMove2=j.top;
+		
 		var halfWidth=$(window).width()/2;	
 		$("#gateTop").css("left",(halfWidth-200));
 		$("#poetry1").hide();
